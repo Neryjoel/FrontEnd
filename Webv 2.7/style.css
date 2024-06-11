@@ -3,10 +3,11 @@
     margin-top: 50px;
 }
 
-input[type="number"] {
+input{
     padding: 10px;
     margin-bottom: 20px;
 }
+
 
 button {
     padding: 10px 20px;
@@ -18,4 +19,11 @@ button {
 
 button:hover {
     background-color: #0056b3;
+
+}
+
+.tablas{
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center; 
 }

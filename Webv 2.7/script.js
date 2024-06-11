@@ -1,6 +1,6 @@
 document.getElementById("generar").addEventListener("click", function() {
     var numero = parseInt(document.getElementById("numero").value);
-    var tablaHTML = "<h2>Tabla de Multiplicar del " + numero + "</h2><table>";
+    var tablaHTML = "<table><tr><th colspan='3'><h2>Tabla de Multiplicar del " + numero + "</h2></th></tr>";
     
     if(numero >= 0) {
         for(var i = 1; i <= 10; i++) {
