@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>snpp</title>
+</head>
+
+<body>
+    <h1>Comprobar si un número es par o impar</h1>
+    <script>
+        // Solicitar un número
+        var numero = Number(prompt('Escriba un número'));
+
+        // Si el valor introducido no es un número, enviar una alerta
+        //document.write(NaN(numero));
+        //alert(isNaN(numero));
+        if (isNaN(numero)) {
+            alert('No es un valor válido');
+        } else {
+            // Comprobar si el número es par o impar
+            if (numero % 2 == 0) {
+                alert('El número ' + numero + ' es par');
+                // Escribir el número en el body
+                document.write('El número ' + numero + ' es par');
+            } else {
+                alert('El número ' + numero + ' es impar');
+                // Escribir el número en el body
+                document.write('El número ' + numero + ' es impar');
+            }
+        }
+    </script>
+</body>
+
+</html>

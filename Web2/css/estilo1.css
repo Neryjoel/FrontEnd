@@ -1,0 +1,22 @@
+h1{
+    background-color: black;
+    font-family: sans-serif;
+    color: aqua;
+    font-size: 28pt;
+}
+
+input{
+    background-color: aliceblue;
+    padding: 4px 4px 4px 4px;
+}
+
+.estilo_boton{
+    padding: 10pt;
+    background-color: darkolivegreen;
+}
+
+#contrato{
+    color: red;
+    font-size:italic;
+    font-size: 18pt;
+}

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    height: max-content;
+    background-color: aliceblue;
+    margin: auto;
+    position: relative;
+    transition: width 0.5s ease;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+header, nav, section, aside, footer {
+    width: 95%;
+    height: max-content;
+    background-color: rgb(81, 230, 76);
+    margin-top: 10px;
+    margin-left: 2.5%;
+    position: relative;
+    transition: width 0.5s ease, margin-left 0.5s ease;
+}
+
+nav {
+    background-color: aqua;
+}
+
+section {
+    background-color: rgb(100, 84, 53);
+    width: 75%;
+    float: left;
+    height: 300px;
+    transition: width 0.5s ease, float 0.5s ease, height 0.5s ease;
+}
+
+aside {
+    background-color: rgb(184, 105, 173);
+    width: 20%;
+    margin-left: 77.5%;
+    height: 300px;
+    transition: width 0.5s ease, margin-left 0.5s ease, height 0.5s ease;
+}
+
+footer {
+    background-color: rgb(51, 44, 34);
+}
+
+.nav-list {
+    list-style-type: none;   
+    transition: flex-direction 0.5s ease, justify-content 0.5s ease;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    transition: padding 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    header, nav, section, aside, footer {
+        width: 100%;
+        margin: 0;
+        float: none;
+        height: max-content;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+}

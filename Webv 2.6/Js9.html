@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería</title>
+    <script src="js9.js"></script>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 18pt;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <h2>GALERÍA</h2>
+    <table border="0" align="center" width="700" height="500">
+        <tr>
+            <td width="100" align="center">
+                <img src="img/atras.png" width="60" height="60" onclick="cambiarImagen('anterior')">
+            </td>
+            <td width="500" align="center" colspan="5">
+                <img src="img/galeria.png" width="480" height="420" name="principal">
+            </td>
+            <td width="100" align="center">
+                <img src="img/siguiente.png" width="60" height="60" onclick="cambiarImagen('siguiente')">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="7">
+                <img src="img/color1.jpg" width="90" height="80" onclick="cambiarMiniatuta(0)">
+                <img src="img/color2.jpg" width="90" height="80" onclick="cambiarMiniatuta(1)">
+                <img src="img/color3.jpg" width="90" height="80" onclick="cambiarMiniatuta(2)">
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 3 Frameworks para JavaScript más usados 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .resaltado {
+            background-color: yellow;
+        }
+        .oculto {
+            display: none;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        p {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>TOP 3 Frameworks para JavaScript más usados 2024</h1>
+
+    <h2 onclick="visibilidad('parrafo-react')">React</h2>
+    <p id="parrafo-react">
+        React es una biblioteca de JavaScript para construir interfaces de usuario. Es mantenida por Facebook y una comunidad de desarrolladores individuales y empresas.
+    </p>
+
+    <h2 onclick="visibilidad('parrafo-vue')">Vue.js</h2>
+    <p id="parrafo-vue">
+        Vue.js es un framework de JavaScript progresivo para construir interfaces de usuario. A diferencia de otros frameworks monolíticos, Vue está diseñado desde el principio para ser adaptable incrementalmente.
+    </p>
+
+    <h2 onclick="visibilidad('parrafo-angular')">Angular</h2>
+    <p id="parrafo-angular">
+        Angular es una plataforma para construir aplicaciones web móviles y de escritorio. Fue creado por Google y sigue siendo ampliamente utilizado en el desarrollo empresarial.
+    </p>
+
+    <script>
+       
+        function resaltarParrafo(elemento) {
+            let parrafos = document.querySelectorAll('p');
+            parrafos.forEach(p => p.classList.remove('resaltado'));
+            elemento.classList.add('resaltado');
+        }
+
+        
+        function visibilidad(parrafoId) {
+            let parrafo = document.getElementById(parrafoId);
+            if (parrafo.classList.contains('oculto')) {
+                parrafo.classList.remove('oculto');
+            } else {
+                parrafo.classList.add('oculto');
+            }
+        }
+
+        document.querySelectorAll('p').forEach(parrafo => {
+            parrafo.addEventListener('mouseover', function() {
+                resaltarParrafo(parrafo);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var ss = document.styleSheets[0];
+            ss.insertRule('body { background-color: #f4f4f9; }', ss.cssRules.length);
+            ss.insertRule('h1 { font-family: "Trebuchet MS", sans-serif; color: #444; }', ss.cssRules.length);
+        });
+    </script>
+</body>
+</html>

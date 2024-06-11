@@ -1,0 +1,114 @@
+@keyframes fondo {
+    from{background-position-x: 0px;}
+    to{
+        background-position-x: -100px;
+    }   
+}
+
+body{
+    background-color: rgb(97, 201, 195);
+    background-image: url('imagenes/cancha.avif');
+    background-size: 150%;
+    background-attachment: fixed;
+    animation-name: fondo;
+    animation-duration: 10s;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    height: 600px;
+    width: 700px;
+    background-color: rgb(216, 216, 168);
+    border-radius: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.capa_enbezado, .capa_login, .capa_registro, .capa_pie,.capa_login1, .capa_login2, .capa_registro1, .capa_registro2 {
+    background-color: rgb(173, 216, 230);
+    box-sizing: border-box;
+    position: absolute;
+}
+
+
+.capa_enbezado, .capa_pie {
+    height: 100px;
+    width: calc(100% - 100px);
+    left: 50px;
+}
+
+.capa_enbezado {
+    top: 50px;
+}
+
+.capa_pie {
+    bottom: 50px;
+}
+
+.capa_login, .capa_registro {
+    height: 200px;
+    width: calc(50% - 75px);
+}
+
+.capa_login1 {
+    height: 200px;
+    width: calc(40% - 75px); /* Ancho más pequeño */
+    top: calc(50% - 100px);
+    left: 50px;
+    bottom: 50px;
+}
+
+.capa_login2 {
+    height: 200px;
+    width: calc(60% - 75px); /* Ancho más grande */
+    top: calc(50% - 100px);
+    right: 50px;
+    bottom: 50px;
+}
+
+
+.capa_registro1 {
+    height: 200px;
+    width: calc(60% - 75px); /* Ancho más pequeño */
+    top: calc(50% - 100px);
+    left: 50px;
+    bottom: 50px;
+}
+
+.capa_registro2 {
+    height: 200px;
+    width: calc(40% - 75px); /* Ancho más grande */
+    top: calc(50% - 100px);
+    right: 50px;
+    bottom: 50px;
+}
+
+
+.capa_login {
+    top: calc(50% - 100px); /* Ajustado para mantener los 50px de altura del encabezado */
+    left: 50px;
+    bottom: 50px; /* Nuevo ajuste para colocar los divs 50px desde el borde inferior */
+}
+
+.capa_registro {
+    top: calc(50% - 100px); /* Ajustado para mantener los 50px de altura del encabezado */
+    right: 50px;
+    bottom: 50px; /* Nuevo ajuste para colocar los divs 50px desde el borde inferior */
+}
+
+.Desarrollado{
+    top: 45%;
+    left:  40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: chartreuse; //Para saber en que posicion está el div(cuadro) */
+    position: absolute;
+}

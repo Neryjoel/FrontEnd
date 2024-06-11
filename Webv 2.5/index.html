@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Acceso</title>
+    <link rel="stylesheet" href="../Webv 2.5/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Ingresa tu correo electrónico para registrarte o iniciar sesión</h2>
+        <form action="#">
+            <input type="email" id="correo" placeholder="Correo electrónico" onkeypress="validar()" required>
+            <button type="submit" id="ingresar" >Ingresar</button>
+        </form>
+        <p>Reenviar instrucciones de confirmación</p>
+        <button>Continuar con Google</button>
+        <p>O bien</p>
+        <button class="google-btn">
+            <img src="../Webv 2.5/images/clipart.png" alt="Logo de Google" width="20" height="20">
+            Continuar con Google
+        </button>
+        <p class="author">Creado por: Nery</p>
+    </div>
+
+    <script>
+        btningresar = document.getElementById('ingresar');
+        btningresar.disabled = true;
+        function validar() {
+            correo = document.getElementById("correo").value;
+            btningresar = document.getElementById('ingresar');
+            if(correo != "" && correo.length > 5){
+             btningresar.disabled = false; 
+            }else{
+                alert("aqui");
+             btningresar.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>

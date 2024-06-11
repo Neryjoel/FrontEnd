@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Hola: </h1>
+    <button onclick="saludar()">Saludame</button>
+</body>
+<script>
+    function saludar(){
+        titulo = document.getElementById("titulo");
+        nombre = prompt("Como te llamas","");
+        titulo.innerHTML = nombre;
+    }
+</script>
+</html>

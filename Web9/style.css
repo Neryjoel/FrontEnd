@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+
+img{
+    width: 400px;
+    float: left;
+}
+
+h1{   
+    color: #4678b9;
+    font-family: Arial, sans-serif;
+}
+
+.estilo{
+    color: #ffffff;
+    font-family: Century Gothic, Arial;
+}

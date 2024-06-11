@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera web</title>
+    <link rel="stylesheet" href="../css/estilo1.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <p id="contrato">Respete las reglas de la plataforma</p>
+    <form action="../formulario/index.html">
+        <label>Nombre y apellido:</label>
+        <input type="text" required><br>
+        <label for="">Correo electronico:</label>
+        <input type="email" required><br>
+        <label for="">Una contraseña:</label>
+        <input type="password" required><br>
+        <input type="checkbox" id="ch_terminos" required><label for="">He leido los terminos y licencia</label><br>
+        <button type="submit" class="estilo_boton" id="btn_submit" onclick="saludar()">Enviar</button>
+    </form>
+    <h2>Desarrolado por Nery</h2>
+</body>
+<script src="../script/script.js"></script>
+</html>

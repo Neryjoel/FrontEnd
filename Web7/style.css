@@ -1,0 +1,120 @@
+
+body {
+    background-image: url('img/paisaje.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logo {
+   font-size: 4vw;
+   color: #ffffff;
+   margin-bottom: 2em;
+   font-size: 40px;
+}
+
+#carousel {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 70%;
+   max-width: 3200px; /* Reducido el ancho de los divs verdes */
+   height: auto;
+}
+
+.carousel-item {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 30%;
+   padding-top: 28%; /* Reducido para bajar más los divs */
+   margin-bottom: 6em; /* Ajustado para separar más los divs */
+   text-align: center;
+   transition: all 0.5s ease;
+   z-index: 1;
+}
+
+.carousel-item img {
+   z-index: 2;
+   position: absolute;
+   width: 50%;
+   height: auto;
+   top: 12%; /* Ajustado para bajar la imagen */
+   left: 19%;
+}
+
+.carousel-item .caption {
+   margin-top: 20px; /* Ajuste para separar el texto de la imagen */
+   font-size: 1.5em;
+   color: #71d082;
+   font-weight: bold; /* Texto en negrita */
+   position: relative;
+   z-index: 2;
+}
+
+.carousel-item:hover {
+   transform: scale(1.1);
+}
+
+.carousel-item::before {
+   content: "";
+   display: block;
+   width: 90%;
+   padding-top: 90%;
+   background-color: #1DB954;
+   border-end-end-radius: 120px; /* Reducido el radio de las esquinas */
+   border-top-right-radius: 120px;
+   border-bottom-left-radius: 120px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+}
+
+@media (max-width: 768px) {
+   #logo {
+       font-size: 6vw;
+   }
+
+   .carousel-item {
+       width: 45%;
+       padding-top: 25%;
+       margin-bottom: 4em; /* Ajustado para separar más los divs */
+   }
+
+   .carousel-item img {
+       width: 50%;
+       top: 20%;
+   }
+
+   .carousel-item .caption {
+       margin-top: 20px; /* Ajustado para separar el texto de la imagen */
+   }
+}
+
+@media (max-width: 480px) {
+   .carousel-item {
+       width: 90%;
+       padding-top: 30%;
+       margin-bottom: 3em; /* Ajustado para separar más los divs */
+   }
+
+   .carousel-item img {
+       width: 50%;
+       top: 15%;
+   }
+
+   .carousel-item .caption {
+       margin-top: 35px; /* Ajustado para separar el texto de la imagen */
+   }
+}
